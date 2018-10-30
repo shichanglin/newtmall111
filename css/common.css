@@ -16,7 +16,7 @@ body{
     font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
 
 }
-.clear-fix{
+.clear-fix::after{
     content: '';
     display:block;
     clear:both;
@@ -62,19 +62,71 @@ box-shadow: 0 2px 4px rgba(0, 0 , 0 ,0.3);
 .zhuce a{
 padding: 0 5px 10px;
 }
-.back{
+.back-name{
     float: right;
 
 }
-.back-name li{
-   line-height: 32px;
+.back-name>li{
     float: left;
-    padding: 0 10px;
+    position: relative; 
 }
-#header-list .bianhua a:hover{
+.back-name .bianhua{
+    position: relative;
+}
+.back-name>li>a{
+    color: #999;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px 0 20px
+}
+ 
+.bianhua:hover>a{
 
 background:#ffff;
-text-decoration:underline ;
+/* text-decoration:underline ; */
 text-decoration-color: #ff0036;
 
+}
+.bianhua>a:hover{
+    text-decoration: underline;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border:3px solid transparent;
+    border-top-color: #999;
+    right:7px;
+    top:19px;
+    transition: transform 0.2s ease ;
+}
+.back-name .bianhua:hover .arrow{
+
+    transform: rotate(180deg);
+    /* 旋转轴心 */
+    transform-origin:50% 25%;
+}
+.sub-list{
+    position: absolute;
+    left:0;
+    top:40px;
+    background: #fff;
+    border:1px solid #eee;
+    border-top:none;
+    padding: 10px 15px;
+    width: 74px;
+    line-height: 30px;
+    display: none;
+
+}
+.sub-list a{
+    color: #999;
+}
+.sub-list a:hover{
+    color: #ff0036;
+    text-decoration: underline;
+}
+.back-name .bianhua:hover .sub-list{
+    display: block;
 }
