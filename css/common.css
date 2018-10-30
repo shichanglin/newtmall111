@@ -1,0 +1,80 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+ul{
+list-style:none;
+}
+a{
+    color:#999;
+    text-decoration: none;
+    font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+body{
+    text-decoration:none;
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+
+}
+.clear-fix{
+    content: '';
+    display:block;
+    clear:both;
+
+
+}
+.header-img{
+ background: #FF0036;
+ text-align: center;
+}
+.header-img img{
+    display: block;
+    margin: 0 auto;
+
+}
+#header-list{
+margin:0 auto;
+height: 41px;
+background: #f2f2f2;
+box-shadow: 0 2px 4px rgba(0, 0 , 0 ,0.3);
+
+}
+#header-first{
+    width: 1230px;
+    height: 32px;
+    margin: 0 auto;
+    font-size: 12px;
+    font:12px/1.5 tahoma,arial,"\5b8b\4f53";
+    color:#999;
+    font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+
+}
+#header-first a:hover{
+    color:#ff0036;
+}
+
+.zhuce{
+    width: 218px;
+    height: 32px;
+    line-height: 32px;
+    float: left;
+}
+.zhuce a{
+padding: 0 5px 10px;
+}
+.back{
+    float: right;
+
+}
+.back-name li{
+   line-height: 32px;
+    float: left;
+    padding: 0 10px;
+}
+#header-list .bianhua a:hover{
+
+background:#ffff;
+text-decoration:underline ;
+text-decoration-color: #ff0036;
+
+}
